@@ -6,7 +6,9 @@ export default function About() {
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       id="about"
     >
-      <h2>About me</h2>
+      <h2 className="text-3x1 capitalize" style={{ fontWeight: 600 }}>
+        About me
+      </h2>
       <p className="mb-3">
         Hello! I'm{" "}
         <span className="font-medium" style={{ fontWeight: 600 }}>
@@ -19,7 +21,7 @@ export default function About() {
         My curiosity about the vast potential of technology drives me to explore
         and grow constantly.
       </p>
-      <p>
+      <p className="mb-3">
         Through my internships and academic projects, I've been honing my skills
         in <span style={{ fontWeight: 600 }}>Python, Java, and JavaScript</span>
         , and delving into frameworks like{" "}
@@ -33,7 +35,7 @@ export default function About() {
         <span style={{ fontWeight: 600 }}>TypeScript</span>, which I find
         complements my learning curve well.
       </p>
-      <p>
+      <p className="mb-3">
         I'm always eager to connect with fellow tech enthusiasts and
         professionals. My goal is to continuously learn, contribute, and
         eventually transition into a full-time role where I can apply and expand
