@@ -6,7 +6,7 @@ export default function About() {
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       id="about"
     >
-      <h2 className="text-3x1 capitalize" style={{ fontWeight: 600 }}>
+      <h2 className="text-3x1 capitalize mb-8" style={{ fontWeight: 600 }}>
         About me
       </h2>
       <p className="mb-3">
@@ -16,10 +16,9 @@ export default function About() {
         </span>
         , a software engineering student at the{" "}
         <span className="italic">University of Texas at Dallas</span>, based in
-        the heart of Dallas. My journey in tech has just begun, but I'm already
-        deeply immersed in learning and crafting innovative software solutions.
-        My curiosity about the vast potential of technology drives me to explore
-        and grow constantly.
+        the heart of Dallas. My journey in tech has just begun, and I'm excited
+        to deeply immerse myself in learning and crafting innovative software
+        solutions.
       </p>
       <p className="mb-3">
         Through my internships and academic projects, I've been honing my skills
@@ -28,12 +27,7 @@ export default function About() {
         <span style={{ fontWeight: 600 }}>React and Next.js</span>. I'm
         especially intrigued by{" "}
         <span className="italic">back-end development</span> and how systems
-        operate behind the scenes. Currently, my learning path is taking me
-        towards <span style={{ fontWeight: 600 }}>Cloud technologies</span> and{" "}
-        <span className="italic">AI/ML</span>, areas I believe are pivotal in
-        the future of software engineering. I'm also getting familiar with{" "}
-        <span style={{ fontWeight: 600 }}>TypeScript</span>, which I find
-        complements my learning curve well.
+        operate behind the scenes.
       </p>
       <p className="mb-3">
         I'm always eager to connect with fellow tech enthusiasts and
