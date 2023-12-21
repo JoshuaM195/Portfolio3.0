@@ -15,10 +15,9 @@ export default function About() {
           Joshua Mathew
         </span>
         , a software engineering student at the{" "}
-        <span className="italic">University of Texas at Dallas</span>, based in
-        the heart of Dallas. My journey in tech has just begun, and I'm excited
-        to deeply immerse myself in learning and crafting innovative software
-        solutions.
+        <span className="italic">University of Texas at Dallas</span>. My
+        journey in tech has just begun, and I'm excited to deeply immerse myself
+        in learning and crafting innovative software solutions.
       </p>
       <p className="mb-3">
         Through my internships and academic projects, I've been honing my skills
