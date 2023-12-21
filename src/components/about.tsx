@@ -1,14 +1,15 @@
+"use client";
 import React from "react";
+import SectionHeading from "./section-heading";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section
+    <motion.section
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       id="about"
     >
-      <h2 className="text-3x1 capitalize mb-8" style={{ fontWeight: 600 }}>
-        About me
-      </h2>
+      <SectionHeading>About Me</SectionHeading>
       <p className="mb-3">
         Hello! I'm{" "}
         <span className="font-medium" style={{ fontWeight: 600 }}>
@@ -34,6 +35,6 @@ export default function About() {
         eventually transition into a full-time role where I can apply and expand
         my knowledge further.
       </p>
-    </section>
+    </motion.section>
   );
 }
