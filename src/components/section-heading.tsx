@@ -5,7 +5,10 @@ type SectionHeadingProps = {
 };
 export default function SectionHeading({ children }: SectionHeadingProps) {
   return (
-    <h2 className="text-3xl capitalize mb-8" style={{ fontWeight: 600 }}>
+    <h2
+      className="text-3xl capitalize mb-8 text-center"
+      style={{ fontWeight: 600 }}
+    >
       {children}
     </h2>
   );
