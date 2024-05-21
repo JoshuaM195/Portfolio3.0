@@ -64,22 +64,22 @@ export const projectsData = [
   {
     title: "Empower",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "I worked as a full-stack developer on this project. Helps mute and deaf people express themselves to the world.",
+    tags: ["React Native", "AWS", "MongoDB", "Express", "Expo"],
     imageUrl: EmpowerImg,
   },
   {
     title: "Langportal",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Language translator using NLP. As a back-end developer, I trained a LLM with Hugging Face, hosted it on SageMaker, and connected it to our front end on Amplify.",
+    tags: ["Next.js", "TypeScript", "AWS", "Tailwind", "PyTorch"],
     imageUrl: LangportalImg,
   },
   {
     title: "Deadlift Tracker",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I utalized OpenCV and MediaPipe to detect human bodies on a camera. The app tracked the users position and counted valid repetitions of deadlifts.",
+    tags: ["Python", "OpenCV", "Pandas", "NumPY"],
     imageUrl: DLTrackerImg,
   },
 ] as const;
