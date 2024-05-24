@@ -5,16 +5,20 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { animate, motion } from "framer-motion";
+import { trace } from "console";
 
 const fadeInAnimationsVariants = {
   initial: {
     opacity: 0,
     y: 100,
   },
-  animate: {
+  animate: (index: number) => ({
     opacity: 1,
     y: 0,
-  },
+    transition: {
+      duration: 0.05 * index,
+    },
+  }),
 };
 
 export default function Skills() {
@@ -32,6 +36,13 @@ export default function Skills() {
           <motion.li
             className="bg-white border border-black/[0.1] rounded-xl px-5 py-3"
             key={index}
+            variants={fadeInAnimationsVariants}
+            initial="initial"
+            whileInView="animate"
+            viewport={{
+              once: true,
+            }}
+            custom={index}
           >
             {skill}
           </motion.li>
