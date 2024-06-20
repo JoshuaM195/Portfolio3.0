@@ -54,7 +54,7 @@ export const experiencesData = [
     title: "Fannie Mae - Software Engieer Intern",
     location: "Dallas, TX",
     description:
-      "I am working as back-end developer for the multi-family team. I am working on a project that will help automate the process of underwriting loans.",
+      "I am working as back-end developer for the multi-family team. I am working on an app that will help automate the process of underwriting loans.",
     icon: React.createElement(CgWorkAlt),
     date: "2024",
   },
