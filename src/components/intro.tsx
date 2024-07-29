@@ -10,6 +10,7 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "../../context/active-section-context";
+import { ReactTyped } from "react-typed";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -70,6 +71,35 @@ export default function Intro() {
         turning <span className="font-bold">ideas</span> into{" "}
         <span className="font-bold">products</span>.
       </motion.h1>
+      <motion.p
+        className="mb-[4rem] text-2xl sm:text-5xl my-4"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <span className="">
+          <span className="font-semibold">I</span> work in
+        </span>{" "}
+        <ReactTyped
+          className="font-extrabold"
+          strings={[
+            "React{NextJS}",
+            "Tailwindcss",
+            "NodeJs",
+            "Git",
+            "MongoDB",
+            "ExpressJs",
+            "TypeScript",
+            "JavaScript",
+            "HTML",
+            "CSS",
+            "SASS",
+          ]}
+          typeSpeed={100}
+          backSpeed={120}
+          loop
+        />
+      </motion.p>
 
       <motion.div
         className="flex flex-col sm:flex-row item-center justify-center gap-2 px-4 text-lg font-medium"
