@@ -59,6 +59,14 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2024",
   },
+  {
+    title: "UTD Networking Lab - ML Research Assistant",
+    location: "Dallas, TX",
+    description:
+      "Building a zero-day DDoS attack detection model. Working with a professor and a PhD candidate to analyze malicious data flows to enable real-time identification of anomalous traffic patterns.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2024",
+  },
 ] as const;
 
 export const projectsData = [
