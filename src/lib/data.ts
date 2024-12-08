@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import EmpowerImg from "../../public/Images/Empower.png";
 import LangportalImg from "../../public/Images/Langportal.png";
 import DLTrackerImg from "../../public/Images/DLTracker.png";
+import UNIFIImg from "../../public/Images/UNIFI.png";
 
 export const links = [
   {
@@ -81,6 +82,13 @@ export const projectsData = [
       "I utalized OpenCV and MediaPipe to detect human bodies on a camera. The app tracked the users position and counted valid repetitions of deadlifts.",
     tags: ["Python", "OpenCV", "Pandas", "NumPY"],
     imageUrl: DLTrackerImg,
+  },
+  {
+    title: "Unifi",
+    description:
+      "AI Powered digital wallet that helps users track their spendings and save money. I worked on the back-end, creating the API and connecting it to the front-end.",
+    tags: ["React", "MongoDB", "Express", "Google Vision", "OpenAI"],
+    imageUrl: UNIFIImg,
   },
 ] as const;
 
