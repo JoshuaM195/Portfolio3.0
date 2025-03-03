@@ -6,6 +6,7 @@ import EmpowerImg from "../../public/Images/Empower.png";
 import LangportalImg from "../../public/Images/Langportal.png";
 import DLTrackerImg from "../../public/Images/DLTracker.png";
 import UNIFIImg from "../../public/Images/UNIFI.png";
+import CodeInsightImg from "../../public/Images/CodeInsight.png";
 
 export const links = [
   {
@@ -71,32 +72,39 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "CodeInsight",
+    description: "An interactive tool that helps developers understand codebases faster by visualizing function dependencies and integrating an AI chatbot for code analysis",
+    tags: ["Flask", "JavaScript", "D3", "Groq", "AST"],
+    imageUrl: CodeInsightImg,
+    isComputerProject: true,
+  },
+  {
     title: "Empower",
-    description:
-      "I worked as a full-stack developer on this project. Helps mute and deaf people express themselves to the world.",
+    description: "I worked as a full-stack developer on this project. Helps mute and deaf people express themselves to the world.",
     tags: ["React Native", "AWS", "MongoDB", "Express", "Expo"],
     imageUrl: EmpowerImg,
+    isComputerProject: false,
   },
   {
     title: "Langportal",
-    description:
-      "Language translator using NLP. As a back-end developer, I trained a LLM with Hugging Face, hosted it on SageMaker, and connected it to our front end on Amplify.",
+    description: "Language translator using NLP. As a back-end developer, I trained a LLM with Hugging Face, hosted it on SageMaker, and connected it to our front end on Amplify.",
     tags: ["Next.js", "TypeScript", "AWS", "Tailwind", "PyTorch"],
     imageUrl: LangportalImg,
+    isComputerProject: true,
   },
   {
     title: "Deadlift Tracker",
-    description:
-      "I utalized OpenCV and MediaPipe to detect human bodies on a camera. The app tracked the users position and counted valid repetitions of deadlifts.",
+    description: "I utilized OpenCV and MediaPipe to detect human bodies on a camera. The app tracked the users position and counted valid repetitions of deadlifts.",
     tags: ["Python", "OpenCV", "Pandas", "NumPY"],
     imageUrl: DLTrackerImg,
+    isComputerProject: false,
   },
   {
     title: "Unifi",
-    description:
-      "AI Powered digital wallet that helps users track their spendings and save money. I worked on the back-end, creating the API and connecting it to the front-end.",
+    description: "AI Powered digital wallet that helps users track their spendings and save money. I worked on the back-end, creating the API and connecting it to the front-end.",
     tags: ["React", "MongoDB", "Express", "Google Vision", "OpenAI"],
     imageUrl: UNIFIImg,
+    isComputerProject: true, 
   },
 ] as const;
 
@@ -119,5 +127,4 @@ export const skillsData = [
   "PostgreSQL",
   "Python",
   "Django",
-  "Framer Motion",
 ] as const;

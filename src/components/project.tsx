@@ -4,9 +4,7 @@ import { projectsData } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number] & {
-  isComputerProject: boolean;
-};
+type ProjectProps = typeof projectsData[number];
 
 export default function Project({
   title,
@@ -56,11 +54,11 @@ export default function Project({
             alt="Project I worked on"
             quality={95}
             className="absolute hidden sm:block top-20 -right-40 w-[30.25rem] rounded-t-lg shadow-2xl
-          transition 
-          group-hover:scale-[1.04]
-          group-hover:-translate-x-3
-          group-hover:translate-y-3
-          group-hover:-rotate-2"
+            transition 
+            group-hover:scale-[1.04]
+            group-hover:-translate-x-3
+            group-hover:translate-y-3
+            group-hover:-rotate-2"
           />
         ) : (
           <motion.div className="absolute w-[250px] h-[500px] mx-auto md:mx-0 md:absolute right-5 top-5 md:w-[300px] md:h-[600px] rounded-lg">
@@ -69,11 +67,11 @@ export default function Project({
               src={imageUrl}
               alt="Project I worked on"
               quality={95}
-              className="absolute hidden sm:block  w-[28.25rem] rounded-t-lg shadow-2xl
-            transition
-            group-transform 
-            group-hover:scale-[1.04] 
-            group-hover:-translate-y-3"
+              className="absolute hidden sm:block w-[28.25rem] rounded-t-lg shadow-2xl
+              transition
+              group-transform 
+              group-hover:scale-[1.04] 
+              group-hover:-translate-y-3"
             />
           </motion.div>
         )}
