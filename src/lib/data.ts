@@ -7,6 +7,7 @@ import LangportalImg from "../../public/Images/Langportal.png";
 import DLTrackerImg from "../../public/Images/DLTracker.png";
 import UNIFIImg from "../../public/Images/UNIFI.png";
 import CodeInsightImg from "../../public/Images/CodeInsight.png";
+import DIYCursor from "../../public/Images/DIYCursor.png";
 
 export const links = [
   {
@@ -72,11 +73,20 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CodeInsight",
-    description: "An interactive tool that helps developers understand codebases faster by visualizing function dependencies and integrating an AI chatbot for code analysis",
+    title: "DIY Cursor",
+    description: "A tool that parses code, stores embeddings in PineconeDB, and uses RAG with DeepSeek to retrieve relevant code, answer questions, and assist with edits",
+    tags: ["Python", "Pinecone", "DeepSeek", "SciKit-Learn"],
+    imageUrl: DIYCursor,
+    isComputerProject: true,
+    projectUrl: "https://github.com/JoshuaM195/DIY_Cursor",
+  },
+  {
+    title: "CodeInsight (TreeHacks Winner)",
+    description: "A tool that helps understand codebases faster by visualizing function dependencies and integrating an AI for code analysis",
     tags: ["Flask", "JavaScript", "D3", "Groq", "AST"],
     imageUrl: CodeInsightImg,
     isComputerProject: true,
+    projectUrl: "https://devpost.com/software/code-insight",
   },
   {
     title: "Empower",
@@ -84,6 +94,7 @@ export const projectsData = [
     tags: ["React Native", "AWS", "MongoDB", "Express", "Expo"],
     imageUrl: EmpowerImg,
     isComputerProject: false,
+    projectUrl: "https://github.com/acm-projects/Empower",
   },
   {
     title: "Langportal",
@@ -91,6 +102,7 @@ export const projectsData = [
     tags: ["Next.js", "TypeScript", "AWS", "Tailwind", "PyTorch"],
     imageUrl: LangportalImg,
     isComputerProject: true,
+    projectUrl: "https://github.com/bluestarburst/LangPortal",
   },
   {
     title: "Deadlift Tracker",
@@ -98,6 +110,7 @@ export const projectsData = [
     tags: ["Python", "OpenCV", "Pandas", "NumPY"],
     imageUrl: DLTrackerImg,
     isComputerProject: false,
+    projectUrl: "https://github.com/JoshuaM195/Deadlift",
   },
   {
     title: "Unifi",
@@ -105,6 +118,7 @@ export const projectsData = [
     tags: ["React", "MongoDB", "Express", "Google Vision", "OpenAI"],
     imageUrl: UNIFIImg,
     isComputerProject: true, 
+    projectUrl: "https://github.com/IbrahimKhanGH/UniFi",
   },
 ] as const;
 
